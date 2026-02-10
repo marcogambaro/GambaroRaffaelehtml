@@ -1,0 +1,67 @@
+/* 
+margin: spaziature esterna 
+max-width: larghezza massima (idem con minima e fissa)
+padding: spaziatura :interna
+border: spessore del bordo */
+
+/*
+.(nome della div) ti fa stylare quel blocco
+*/
+
+body{background: yellowgreen;}
+
+.page_container {
+    margin: 0 auto; 
+    max-width: 800px;
+    padding: 10px;
+    border: 1px solid greenyellow;
+}
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #AAAAAA;
+    padding: 15px;
+    border: 1px solid black;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .nav_e_main {
+    display: flex;
+}
+
+.nav {
+    border: 1px solid red;
+    width: 25%;
+}
+
+.main {
+    padding: 10px;
+    border: 1px solid black;
+    width: 75%;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+}
+h1{
+    color: red;
+    text-align: center;
+} */
