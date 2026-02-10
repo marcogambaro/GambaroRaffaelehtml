@@ -1,0 +1,57 @@
+body {
+  font-family: "Latin Modern Roman", serif;
+  font-size: 16px;
+  background-color: oklch(0.253267 0.015896 252.418);
+  color: oklch(87.521% 0.01489 264.543);
+  margin: 0;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-div {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.sans {
+  font-family: sans-serif;
+}
+
+header {
+  background-color: oklch(0.211484 0.01165 254.088 / 0.85);
+  height: 68px;
+  padding: 0 20px;
+}
+
+.nav-container{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 28px;
+}
+
+.nav-links{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin-left: 0;
+}
+
+.nav-links a{
+  color: white;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 40px;
+  display: block;
+}
