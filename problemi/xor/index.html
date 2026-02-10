@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>L'Algebra dello XOR</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman/index.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+                onload="renderMathInElement(document.body);"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-container">
+                <div class="logo">
+                    <img src="../../logo.png" alt="Logo">
+                </div>
+
+                <ul class="nav-links sans">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../index.html">Problemi</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 class="center-text sans">
+            L'Algebra dello XOR
+        </h1>
+
+        <div class="center-div">
+            <p>
+                Sia \(\mathbb{F}_2=\{0,1\}\) il campo con due elementi, con somma e prodotto modulo \(2\).
+                Per \(n\in\mathbb{N}\) considera l'insieme dei bitstring di lunghezza \(n\),
+                \[
+                B_n = \{0,1\}^n,
+                \]
+                e definisci l'operazione \(\oplus\) (XOR) componente per componente:
+                \[
+                (x_1,\dots,x_n)\oplus (y_1,\dots,y_n) = (x_1+y_1,\dots,x_n+y_n),
+                \]
+                dove le somme sono in \(\mathbb{F}_2\).
+
+                <ul>
+                <li> Dimostrare che \((B_n,\oplus)\) è un gruppo abeliano e determinare l'elemento neutro e l'inverso di un elemento qualunque.</li>
+
+                <li> Dimostrare che l'applicazione
+                \[
+                \psi:B_n\to \mathbb{F}_2^n,\qquad \psi(x)=x
+                \]
+                è un isomorfismo di gruppi tra \((B_n,\oplus)\) e \((\mathbb{F}_2^n,+)\).</li>
+
+                <li> Sia fissata una chiave \(k\in B_n\). Considera la funzione di "cifratura" (one-time pad senza ipotesi di casualità)
+                \[
+                E_k:B_n\to B_n,\qquad E_k(m)=m\oplus k.
+                \]
+                Dimostrare che \(E_k\) è una biiezione e trovare esplicitamente la sua inversa \(D_k\).</li>
+
+                <li> Dimostrare che l'insieme
+                \[
+                \mathcal{T}=\{\,E_k \mid k\in B_n\,\}
+                \]
+                è un sottogruppo di \(\mathrm{Sym}(B_n)\) (gruppo delle permutazioni di \(B_n\)) rispetto alla composizione di funzioni, e determinare un isomorfismo esplicito
+                \[
+                \mathcal{T}\cong (B_n,\oplus).
+                \]</li>
+
+                <li> (Collegamento con informatica) Sia \(S\subseteq B_n\) un insieme di stati (bitstring) e sia \(k\in B_n\).
+                Dimostrare che la trasformazione \(S \mapsto S\oplus k := \{\, s\oplus k \mid s\in S\,\}\) preserva la cardinalità di \(S\)
+                e che è una permutazione degli stati (spiegare il significato in termini di "mascheramento"/"toggle" di bit).</li>
+                </ul>
+            </p>
+
+            <form action="../index.html">
+                <input type="submit" value="Torna indietro" />
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,3 +1,5 @@
+/* Stile generale */
+
 body {
   font-family: "Latin Modern Roman", serif;
   font-size: 16px;
@@ -19,6 +21,8 @@ body {
 .sans {
   font-family: sans-serif;
 }
+
+/* Header */
 
 header {
   background-color: oklch(0.211484 0.01165 254.088 / 0.85);
@@ -54,4 +58,34 @@ header {
 .logo img {
   height: 40px;
   display: block;
+}
+
+/* Lista dei problemi */
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 0;
+}
+
+.stars {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.stars::before {
+  content: "★★★★★";
+  color: #ddd;
+}
+
+.stars::after {
+  content: "★★★★★";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--fill, 0%);
+  overflow: hidden;
+  white-space: nowrap;
 }

@@ -5,11 +5,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman/index.css">
-        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
-                onload="renderMathInElement(document.body);"></script>
+        <script>
+            window.MathJax = {
+                tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$','$$'], ['\\[','\\]']] },
+                options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+            };
+        </script>
+        <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     </head>
     <body>
         <header>
@@ -26,10 +29,14 @@
         </header>
 
         <h1 class="center-text sans">
-            Portale di allenamento delle Olimpiadi Italiane di Matematica
+            Portale di allenamento della Matematica
         </h1>
 
         <div class="center-div">
+            <p><i>(La matematica dei fisici non è matematica!!!1!!111!11!1!!!!1)</i></p>
+
+            <p>Non so cosa scrivere qui, quindi ecco l'enunciato del supremo Teorema Fondamentale del Calcolo Integrale:</p>
+
             <p>
                 <h2 class="sans">Fundamental Theorem of Calculus</h2>
 
