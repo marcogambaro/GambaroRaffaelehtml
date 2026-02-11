@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
       { id: "rsa", title: "RSA (Respiratory Sinus Arrhythmia)", difficulty: 3.5 },
       { id: "limite", title: "Limiti Notevoli", difficulty: 2 },
       { id: "xor", title: "L'Algebra dello XOR", difficulty: 4.2 },
+      { id: "normale", title: "Un esercizio Normale", difficulty: 5.0 },
+      { id: "subadd", title: "Subadditività", difficulty: 4 },
+      { id: "conteggio", title: "Trova il conteggio", difficulty: 1.0 },
+      { id: "piccionebuco", title: "Lo scavo del Piccionebuco", difficulty: 2.5 },
     ],
     itemsPerPage: 10,
     currentPage: 1,
@@ -21,11 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function difficultyColor(d) {
-    if (d <= 1.0) return "#2ecc71";
-    else if (d <= 2.0) return "#45ca7d";
+    if (d <= 1.0) return "#29fa80";
+    else if (d <= 2.0) return "#19c340";
     else if (d <= 3.0) return "#f7f313";
     else if (d <= 4.0) return "#f39c12";
-    else return "#e74c3c";
+    else if (d < 5.0) return "#e74c3c";
+    else return "#a52f21";
   }
 
   function totalPages() {
