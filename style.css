@@ -112,3 +112,14 @@ header {
 #pagination button[disabled] { opacity: 0.5; cursor: not-allowed; }
 #pagination .active { border-color: black; font-weight: 700; }
 #pagination .ellipsis { border: none; background: transparent; cursor: default; }
+
+/* adjustements for small windows */
+
+@media (max-width: 573px) {
+  .hh1 {
+    font-size: 20px;
+  }
+  .hh2 {
+    font-size: 18px;
+  }
+}
