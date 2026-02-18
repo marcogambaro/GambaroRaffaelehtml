@@ -95,6 +95,8 @@ header {
   color: currentColor;
 }
 
+/* hovering */
+
 .nav-links a:hover {
   font-style: italic;
   color: rgb(4, 107, 114);
