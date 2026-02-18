@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { id: "subadd", title: "Subadditività", difficulty: 4 },
       { id: "conteggio", title: "Trova il conteggio", difficulty: 1.0 },
       { id: "piccionebuco", title: "Lo scavo del Piccionebuco", difficulty: 2.5 },
-      { id: "2026subset", title: "2026 subsets", difficulty: 3}
+      { id: "2026subset", title: "2026 subsets", difficulty: 2.5 }
     ],
     itemsPerPage: 10,
     currentPage: 1,

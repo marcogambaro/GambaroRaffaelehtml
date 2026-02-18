@@ -95,6 +95,11 @@ header {
   color: currentColor;
 }
 
+.nav-links a:hover {
+  font-style: italic;
+  color: green;
+}
+
 #pagination {
   display: flex;
   gap: 0.35rem;
