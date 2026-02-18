@@ -97,7 +97,7 @@ header {
 
 .nav-links a:hover {
   font-style: italic;
-  color: green;
+  color: rgb(4, 107, 114);
 }
 
 #pagination {
