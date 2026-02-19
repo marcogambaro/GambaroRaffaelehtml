@@ -28,11 +28,13 @@ header {
   background-color: oklch(0.211484 0.01165 254.088 / 0.85);
   height: 68px;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-container{
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 8%;
   padding: 0 20px;
   height: 70px;
   display: flex;
@@ -60,6 +62,15 @@ header {
   display: block;
 }
 
+.logo--login {
+  transform: scale(0.73);
+  filter: invert(1);
+}
+
+.logo--login:hover {
+  filter: invert(82%) sepia(15%) saturate(5000%) hue-rotate(160deg) brightness(1.2);
+}
+
 /* Lista problemi */
 
 #item-list { padding-left: 1.2rem; }
@@ -71,7 +82,6 @@ header {
   padding: 0.4rem 0.6rem;
   border-radius: 6px;
 }
-.item-row:hover { background: #f5f5f5; }
 .item-title { flex: 1; }
 
 .stars {
@@ -95,12 +105,41 @@ header {
   color: currentColor;
 }
 
+/* inserimento dati */
+
+.text-area {
+  display: flex;
+  justify-content: left;
+  background-color: rgb(45, 57, 57);
+  height: 60px;
+  width: 300px;
+  margin: 10px auto;
+  padding: 0 15px;
+  border: 5px solid rgb(37, 44, 44);
+  border-radius: 8px;
+  color: #ddd;
+}
+
+.text-area::placeholder {
+  justify-content: left;
+  font-family: sans-serif;
+  color:rgba(248, 248, 248, 0.486)
+}
+
 /* hovering */
 
 .nav-links a:hover {
-  font-style: italic;
-  color: rgb(4, 107, 114);
+  color: rgb(111, 215, 223);
 }
+
+.item-row:hover { 
+  background: #f5f5f5; 
+
+  .item-title {
+  color: rgb(21, 33, 34);
+  }
+}
+
 
 #pagination {
   display: flex;
@@ -123,10 +162,10 @@ header {
 /* adjustements for small windows */
 
 @media (max-width: 573px) {
-  .hh1 {
+  h1 {
     font-size: 20px;
   }
-  .hh2 {
+  h2 {
     font-size: 18px;
   }
 }
