@@ -15,27 +15,7 @@
         <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     </head>
     <body>
-        <header>
-            <nav class="nav-container">
-                <div class="logo">
-                    <img src="immagini/logo.png" alt="Logo">
-                </div>
-
-                <ul class="nav-links sans">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="problemi/index.html">Problemi</a></li>
-                </ul>
-            </nav>
-            <nav class="nav-container">
-               <ul class="nav-links sans">
-                   <a href="login/index.html">
-                        <div class="logo logo--login">
-                           <img src="immagini/login.png" alt="Login">
-                        </div>
-                    </a>
-               </ul>
-            </nav>
-        </header>
+        <div id="header-container"></div>
 
         <h1 class="center-text sans">
             Portale di allenamento della Matematica
@@ -54,5 +34,20 @@
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </div>
+
+        <script>
+    // Se siamo su GitHub Pages, la root è /GambaroRaffaelehtml
+    // Se siamo in locale, usa la cartella corrente (.)
+    const isGithub = location.hostname.includes("github.io");
+    const rootPath = isGithub ? "/GambaroRaffaelehtml" : ".";
+
+    fetch(rootPath + "/header.html")
+      .then(resp => resp.text())
+      .then(data => {
+        // sostituisci __ROOT__ con il percorso corretto
+        const html = data.replace(/__ROOT__/g, rootPath);
+        document.getElementById("header-container").innerHTML = html;
+      });
+  </script>
     </body>
 </html>
