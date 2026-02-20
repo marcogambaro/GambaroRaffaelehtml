@@ -87,6 +87,7 @@ header {
 .col {
   display:flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   padding: 20px 20px;
   background-color: rgb(45, 57, 57);
@@ -203,7 +204,7 @@ header {
     font-size: 20px;
   }
   h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .logo {
@@ -214,7 +215,7 @@ header {
   }
 
   .col {
-    height: 130px;
+    height: 150px;
   }
   .button {
     font-size: 16px;
