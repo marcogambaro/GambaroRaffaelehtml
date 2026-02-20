@@ -83,7 +83,6 @@ header {
   row-gap: 20px;
   flex-wrap: wrap;
   padding: 0 10%;
-  border: 1px solid red;
 }
 .col {
   display:flex;
@@ -198,8 +197,7 @@ header {
 #pagination .active { border-color: black; font-weight: 700; }
 #pagination .ellipsis { border: none; background: transparent; cursor: default; }
 
-/* adjustements for small windows */
-
+/* adjustements for very small windows */
 @media (max-width: 580px) {
   h1 {
     font-size: 20px;
@@ -213,5 +211,12 @@ header {
   }
   .logo--login {
     display: block;
+  }
+
+  .col {
+    height: 130px;
+  }
+  .button {
+    font-size: 16px;
   }
 }
