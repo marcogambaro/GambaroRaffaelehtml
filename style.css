@@ -22,19 +22,30 @@ body {
   font-family: sans-serif;
 }
 
+.button {
+  background-color: blue;
+  color: oklch(87.521% 0.01489 264.543);
+  display: inline-block;
+  padding: 15px 20px;
+}
+.button:hover {
+  background-color: rgb(111, 215, 223);
+  color: oklch(0.211484 0.01165 254.088 / 0.85);
+}
+
 /* Header */
 
 header {
   background-color: oklch(0.211484 0.01165 254.088 / 0.85);
   height: 68px;
-  padding: 0 20px;
+  padding: 0 10%;
   display: flex;
   justify-content: space-between;
 }
 
 .nav-container{
   max-width: 800px;
-  margin: 0 8%;
+  margin: 0;
   padding: 0 20px;
   height: 70px;
   display: flex;
@@ -50,6 +61,10 @@ header {
   display: flex;
   gap: 24px;
   margin-left: 0;
+}
+
+.nav-links a:hover {
+  color: rgb(111, 215, 223);
 }
 
 .nav-links a{
@@ -71,6 +86,31 @@ header {
   filter: invert(82%) sepia(15%) saturate(5000%) hue-rotate(160deg) brightness(1.2);
 }
 
+/* Home */
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  padding: 0 10%;
+  border: 1px solid red;
+}
+.col {
+  padding: 20px 10px;
+  background-color: rgb(45, 57, 57);
+  border-radius: 8px;
+  display: bl;
+}
+.col--40 { width: 40%; }
+.col--50 { width: 50%; }
+.col--100 { width: 100%; }
+@media(max-width: 760px) {
+  .col {
+    width: 100%;
+  }
+}
+
 /* Lista problemi */
 
 #item-list { padding-left: 1.2rem; }
@@ -83,6 +123,13 @@ header {
   border-radius: 6px;
 }
 .item-title { flex: 1; }
+.item-row:hover { 
+  background: #f5f5f5; 
+
+  .item-title {
+  color: rgb(21, 33, 34);
+  }
+}
 
 .stars {
   position: relative;
@@ -126,20 +173,6 @@ header {
   color:rgba(248, 248, 248, 0.486)
 }
 
-/* hovering */
-
-.nav-links a:hover {
-  color: rgb(111, 215, 223);
-}
-
-.item-row:hover { 
-  background: #f5f5f5; 
-
-  .item-title {
-  color: rgb(21, 33, 34);
-  }
-}
-
 
 #pagination {
   display: flex;
@@ -161,11 +194,18 @@ header {
 
 /* adjustements for small windows */
 
-@media (max-width: 573px) {
+@media (max-width: 580px) {
   h1 {
     font-size: 20px;
   }
   h2 {
     font-size: 18px;
+  }
+
+  .logo {
+    display: none;
+  }
+  .logo--login {
+    display: block;
   }
 }
