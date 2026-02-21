@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const problemi = {
     items: [
+      { id: "cerchibruc", title: "Cerchi bruciati", difficulty: 0.7 },
       { id: "cifre", title: "Somma Delle Cifre", difficulty: 2 },
       { id: "legendre", title: "La leggenda di p-Olignac", difficulty: 3 },
       { id: "rsa", title: "RSA (Respiratory Sinus Arrhythmia)", difficulty: 3.5 },
@@ -8,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { id: "xor", title: "L'Algebra dello XOR", difficulty: 4.2 },
       { id: "normale", title: "Un esercizio Normale", difficulty: 5.0 },
       { id: "subadd", title: "Subadditività", difficulty: 4 },
-      { id: "conteggio", title: "Trova il conteggio", difficulty: 1.0 },
+      { id: "conteggio", title: "Trova il conteggio", difficulty: 0.5 },
       { id: "piccionebuco", title: "Lo scavo del Piccionebuco", difficulty: 2.5 },
       { id: "2026subset", title: "2026 subsets", difficulty: 2.5 },
       { id: "fact22", title: "Fattoriali e potenze di due", difficulty: 2.2 },
