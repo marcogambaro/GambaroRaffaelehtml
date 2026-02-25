@@ -1,8 +1,10 @@
 function loadHeader() {
-    const depth = (window.location.pathname.match(/\//g) || []).length - 2;
-    const logoPath = '../'.repeat(depth) + 'immagini/logo.png';
-    const problemiPath = '../'.repeat(depth) + 'problemi/index.html';
-    const homePath = '../'.repeat(depth) + 'index.html';
+    const base = window.location.origin + 
+        (window.location.pathname.includes("GambaroRaffaelehtml") ? "/nome-repo" : "");
+
+    const logoPath = base + "/immagini/logo.png";
+    const problemiPath = base + "/problemi/index.html";
+    const homePath = base + "/index.html";
 
     document.getElementsByTagName("header")[0].innerHTML = `
         <nav class="nav-container">
@@ -15,10 +17,8 @@ function loadHeader() {
             <li><a href="${problemiPath}">Problemi</a></li>
         </ul>
         </nav>
-    `;
 
-    // login button (coming soon)
-    /*
+
         <nav class="nav-container">
         <ul class="nav-links sans">
             <a href="../login/index.html">
@@ -29,5 +29,4 @@ function loadHeader() {
         </ul>
         </nav>
     `;
-    */
 }
