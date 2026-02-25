@@ -1,5 +1,5 @@
 function loadHeader() {
-    const depth = (window.location.pathname.match(/\//g) || []).length - 1;
+    const depth = (window.location.pathname.match(/\//g) || []).length - 2;
     const logoPath = '../'.repeat(depth) + 'immagini/logo.png';
     const problemiPath = '../'.repeat(depth) + 'problemi/index.html';
     const homePath = '../'.repeat(depth) + 'index.html';
