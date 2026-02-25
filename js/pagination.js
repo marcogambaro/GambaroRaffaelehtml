@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const problemi = {
     items: [
-      { id: "legendre2", title: "Legendre's revenge", difficulty: 2.3 },
       { id: "cerchibruc", title: "Cerchi bruciati", difficulty: 0.7 },
+      { id: "legendre2", title: "Legendre's revenge", difficulty: 2.3 },
       { id: "cifre", title: "Somma Delle Cifre", difficulty: 2 },
       { id: "legendre", title: "La leggenda di p-Olignac", difficulty: 3 },
       { id: "rsa", title: "RSA (Respiratory Sinus Arrhythmia)", difficulty: 3.5 },
