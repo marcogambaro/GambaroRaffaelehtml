@@ -1,6 +1,6 @@
 function loadHeader() {
     const base = window.location.origin + 
-        (window.location.pathname.includes("GambaroRaffaelehtml") ? "/nome-repo" : "");
+        (window.location.pathname.includes("GambaroRaffaelehtml") ? "/GambaroRaffaelehtml" : "");
 
     const logoPath = base + "/immagini/logo.png";
     const problemiPath = base + "/problemi/index.html";
