@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>La leggenda di p-Olignac</title>
+        <title>Il Binomio di Newton</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../style.css">
@@ -18,19 +18,14 @@
         </header>
 
         <h1 class="center-text sans">
-            La leggenda di p-Olignac
+            Il Binomio di Newton
         </h1>
 
         <div class="center-div">
             <p>
-                Siano \(p, n, a\) interi positivi e si supponga che \(p\) sia primo.
-                <ol type="a">
-                    <li> Mostrare che se \(p^a\) divide \(n!\) allora
-                    \[a ≤ \lfloor \frac{n}{p} \rfloor + \lfloor \frac{n}{p^2} \rfloor + ... + \lfloor \frac{n}{p^n} \rfloor \] </li>
-                    <li> Mostrare che, se esiste un intero \(k\) con \(0 ≤ k ≤ n\) tale che \(p^a\) divide \(\binom{n}{k}\), allora \(p^a ≤ n\).
-                </ol>
-                <br><br><i>Nota.</i> Ricordiamo che \(0! = 1! = 1, n! = 1 \cdot 2 \cdot ... \cdot n, \binom{n}{k} = \frac{n!}{k!(n-k)!}\) e per
-                \(x \in \mathbb{R}\), \(\lfloor x \rfloor\) è il più grande intero \(h\) con \(h ≤ x\).
+                Dati \(a, b\) numeri reali e \(n\) intero positivo, si definisca il coefficiente binomiale
+                \(\binom{n}{k}\) e si dimostri la formula dello sviluppo di Newton
+                $$ (a+b)^n = \sum^{n}_{k=0} \binom{n}{k} a^k b^{n-k} $$
             </p>
 
             <form action="../index.html">

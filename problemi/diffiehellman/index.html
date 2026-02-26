@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Diffie-Hellman Key Exchange</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman/index.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+                onload="renderMathInElement(document.body);"></script>
+        <script src="../../js/header.js"></script>
+    </head>
+    <body onload="loadHeader()">
+        <header>
+            
+        </header>
+
+        <h1 class="center-text sans">
+            Diffie-Hellman Key Exchange
+        </h1>
+
+        <div class="center-div">
+            <p>
+                Sia \(p\) un numero primo e sia \(\mathbb{F}_p^\times\) il gruppo moltiplicativo dei
+                non nulli modulo \(p\). Sia \(g \in \mathbb{F}_p^\times\) un generatore, cioè un
+                elemento di ordine \(p-1\).
+
+                Alice sceglie uniformemente \(a \in \{1, \dots, p-2\}\) e invia
+                $$ A = g^a \bmod p. $$
+                Bob sceglie uniformemente \(b \in \{1, \dots, p-2\}\) e invia
+                $$ B = g^b \bmod p. $$
+
+                Le chiavi calcolate sono
+                $$ K_A = B^a \bmod p, \qquad K_B = A^b \bmod p. $$
+
+                <ol>
+                    <li>
+                        <strong>Correttezza.</strong>
+                        Dimostrare che \(K_A = K_B\) per ogni scelta di \(a, b\).
+                    </li>
+
+                    <li>
+                        <strong>Problema Diffie–Hellman computazionale (CDH).</strong>
+                        Si definisce CDH nel gruppo \(\mathbb{F}_p^\times\) come segue:
+                        dato \((g, g^a, g^b)\), calcolare \(g^{ab}\).
+                        Dimostrare che esiste un algoritmo che calcola la chiave condivisa
+                        \(K\) a partire da \((p, g, A, B)\) se e solo se esiste un algoritmo
+                        che risolve CDH su input \((g, g^a, g^b)\).
+                    </li>
+
+                    <li>
+                        <strong>Problema del logaritmo discreto (DLP).</strong>
+                        Si definisce DLP come segue: dato \((g, g^a)\), determinare \(a\).
+                        Dimostrare che la capacità di risolvere DLP implica la capacità
+                        di calcolare la chiave condivisa \(K\).
+                        Discutere inoltre perché non è noto, in generale,
+                        se la capacità di calcolare \(g^{ab}\) implichi la capacità
+                        di risolvere DLP.
+                    </li>
+
+                    <li>
+                        <strong>Scelta di un generatore di ordine non massimo.</strong>
+                        Supporre ora che \(g\) abbia ordine \(d \mid (p-1)\) con \(d < p-1\).
+                        <ol type="a">
+                            <li>
+                                Dimostrare che la chiave \(K = g^{ab}\) appartiene a un
+                                sottogruppo di cardinalità \(d\).
+                            </li>
+                            <li>
+                                Concludere che, a parità di \(p\), la scelta di un elemento
+                                di ordine piccolo riduce lo spazio delle chiavi possibili
+                                e facilita attacchi per enumerazione nel sottogruppo.
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </p>
+
+            <form action="../index.html">
+                <input type="submit" value="Torna indietro" />
+            </form>
+        </div>
+    </body>
+</html>

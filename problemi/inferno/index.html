@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>La leggenda di p-Olignac</title>
+        <title>Inferno polinomiale</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../style.css">
@@ -18,19 +18,16 @@
         </header>
 
         <h1 class="center-text sans">
-            La leggenda di p-Olignac
+            Inferno polinomiale
         </h1>
 
         <div class="center-div">
             <p>
-                Siano \(p, n, a\) interi positivi e si supponga che \(p\) sia primo.
-                <ol type="a">
-                    <li> Mostrare che se \(p^a\) divide \(n!\) allora
-                    \[a ≤ \lfloor \frac{n}{p} \rfloor + \lfloor \frac{n}{p^2} \rfloor + ... + \lfloor \frac{n}{p^n} \rfloor \] </li>
-                    <li> Mostrare che, se esiste un intero \(k\) con \(0 ≤ k ≤ n\) tale che \(p^a\) divide \(\binom{n}{k}\), allora \(p^a ≤ n\).
-                </ol>
-                <br><br><i>Nota.</i> Ricordiamo che \(0! = 1! = 1, n! = 1 \cdot 2 \cdot ... \cdot n, \binom{n}{k} = \frac{n!}{k!(n-k)!}\) e per
-                \(x \in \mathbb{R}\), \(\lfloor x \rfloor\) è il più grande intero \(h\) con \(h ≤ x\).
+                Siano \(f(t)\) e \(g(t)\) polinomi a coefficienti reali di grado \(3\) e sia
+                \(h(t)\) un polinomio non nullo a coefficienti reali di grado al massimo \(2\).
+                Supponiamo che si abbia
+                $$ f(t)^2 + h(t)^2 = g(t)^2 $$
+                Mostare che esistono due numeri reali \(a \ne b\) per i quali \(f(a) = f(b) = 0\).
             </p>
 
             <form action="../index.html">

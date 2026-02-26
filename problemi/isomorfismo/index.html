@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>La leggenda di p-Olignac</title>
+        <title>Contare fino a n (ma in cerchio)</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../style.css">
@@ -18,19 +18,27 @@
         </header>
 
         <h1 class="center-text sans">
-            La leggenda di p-Olignac
+            Contare fino a n (ma in cerchio)
         </h1>
 
         <div class="center-div">
             <p>
-                Siano \(p, n, a\) interi positivi e si supponga che \(p\) sia primo.
-                <ol type="a">
-                    <li> Mostrare che se \(p^a\) divide \(n!\) allora
-                    \[a ≤ \lfloor \frac{n}{p} \rfloor + \lfloor \frac{n}{p^2} \rfloor + ... + \lfloor \frac{n}{p^n} \rfloor \] </li>
-                    <li> Mostrare che, se esiste un intero \(k\) con \(0 ≤ k ≤ n\) tale che \(p^a\) divide \(\binom{n}{k}\), allora \(p^a ≤ n\).
+                Sia \(n \in \mathbb{N}\), \(n \ge 1\). Si consideri il gruppo moltiplicativo delle radici
+                complesse \(n\)-esime dell'unità
+                $$ \mu_n = \{ z \in \mathbb{C}^× : z^n = 1 \}, $$
+                e il gruppo additivo quoziente (\(\mathbb{Z}/n\mathbb{Z}, +\)). Posto
+                $$ \zeta = e^{\frac{2\pi i}{n}} $$
+                si definisca l'applicazione
+                $$ \varphi : \mathbb{Z}/n\mathbb{Z} \rightarrow \mu_n, \quad \varphi(\overline{k}) = \zeta^k. $$
+
+                <ol>
+                    <li>Dimostare che \(\varphi\) è ben definita.</li>
+                    <li>Dimostare che \(\varphi\) è un omomorfismo di gruppi da \((\mathbb{Z}/n\mathbb{Z}, +)\) a \((\mu_n, \cdot)\).</li>
+                    <li>Dimostare che \(\varphi\) è biiettiva.</li>
                 </ol>
-                <br><br><i>Nota.</i> Ricordiamo che \(0! = 1! = 1, n! = 1 \cdot 2 \cdot ... \cdot n, \binom{n}{k} = \frac{n!}{k!(n-k)!}\) e per
-                \(x \in \mathbb{R}\), \(\lfloor x \rfloor\) è il più grande intero \(h\) con \(h ≤ x\).
+
+                Concludere che \(\varphi\) è un isomorfismo e quindi
+                $$ (\mathbb{Z}/n\mathbb{Z}, +) \cong (\mu_n, \cdot). $$
             </p>
 
             <form action="../index.html">
