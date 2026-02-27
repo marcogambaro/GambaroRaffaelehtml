@@ -41,15 +41,14 @@ function loadHeader() {
             <ul class="nav-links sans">
                 <li><a href="${homePath}">Home</a></li>
             </ul>
+            <ul class="nav-links sans login-links">
+                <li><a href="${loginPath}">Accedi / Registrati</a></li>
+            </ul>
             <ul class="nav-links sans">
                 <li><a href="${problemiPath}">Problemi</a></li>
             </ul>
             <ul class="nav-links sans">
                 <li><a href="${badgePath}">CalcoBadge</a></li>
-            </ul>
-
-            <ul class="nav-links sans login-links">
-                <li><a href="${loginPath}">Accedi / Registrati</a></li>
             </ul>
         </div>
     `;
