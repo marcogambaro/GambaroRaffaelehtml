@@ -10,27 +10,51 @@ function loadHeader() {
 
     document.getElementsByTagName("header")[0].innerHTML = `
         <nav class="nav-container">
-        <div class="logo">
-            <img src="${logoPath}" alt="Logo">
-        </div>
+            <div class="logo">
+                <img src="${logoPath}" alt="Logo">
+            </div>
 
-        <ul class="nav-links sans">
-            <li><a href="${homePath}">Home</a></li>
-            <li><a href="${problemiPath}">Problemi</a></li>
-            <li><a href="${badgePath}">CalcoBadge</a></li>
-        </ul>
+            <ul class="nav-links sans">
+                <li><a href="${homePath}">Home</a></li>
+                <li><a href="${problemiPath}">Problemi</a></li>
+                <li><a href="${badgePath}">CalcoBadge</a></li>
+            </ul>
         </nav>
 
         <nav class="nav-container">
-        <ul class="nav-links sans">
-            <li><a href="${loginPath}">Accedi / Registrati</a></li>
-        </ul>
+            <ul class="nav-links sans">
+                <li><a href="${loginPath}">Accedi / Registrati</a></li>
+            </ul>
 
-        <a href="${loginPath}">
-        <div class="logo logo--login">
-            <img src="${base}/immagini/login.png" alt="Login">
-        </div>
-        </a>
+            <a href="${loginPath}">
+            <div class="logo logo--login">
+                <img src="${base}/immagini/login.png" alt="Login">
+            </div>
+            </a>
         </nav>
+
+        <!-- Hamburger -->
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+        <div class="menu-wrapper" id="menuWrapper">
+            <ul class="nav-links sans">
+                <li><a href="${homePath}">Home</a></li>
+            </ul>
+            <ul class="nav-links sans">
+                <li><a href="${problemiPath}">Problemi</a></li>
+            </ul>
+            <ul class="nav-links sans">
+                <li><a href="${badgePath}">CalcoBadge</a></li>
+            </ul>
+
+            <ul class="nav-links sans login-links">
+                <li><a href="${loginPath}">Accedi / Registrati</a></li>
+            </ul>
+        </div>
     `;
+}
+
+function toggleMenu() {
+    document.getElementById("menuWrapper").classList.toggle("open");
 }

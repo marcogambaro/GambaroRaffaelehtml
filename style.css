@@ -75,6 +75,24 @@ header {
   filter: invert(82%) sepia(15%) saturate(5000%) hue-rotate(160deg) brightness(1.2);
 }
 
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  max-width: 800px;
+  margin: 0;
+  padding: 15px 20px 0px 20px;
+  height: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 28px;
+}
+
+.menu-wrapper {
+    display: none;
+    width: 100%;
+}
+
 /* Home */
 .title{
   font-size: 35px;
@@ -252,4 +270,39 @@ header {
   .button {
     font-size: 16px;
   }
-}
+
+  /* Mostra hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* Nasconde menu normale */
+    .nav-container {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    .menu-wrapper {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    .menu-wrapper.open {
+        display: flex;
+        background-color: rgb(45, 57, 57);;
+    }
+} 
