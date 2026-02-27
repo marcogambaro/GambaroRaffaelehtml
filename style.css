@@ -92,8 +92,9 @@ header {
 .main {
   font-size: 17px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items:flex-start;
+  gap: 5px;
   row-gap: 20px;
   flex-wrap: wrap;
   padding: 0 10%;
@@ -116,6 +117,9 @@ header {
 @media(max-width: 760px) {
   .col {
     width: 100%;
+  }
+  .col--home {
+    height: 250px;
   }
 }
 .backgroundless {
@@ -245,9 +249,6 @@ header {
     display: block;
   }
 
-  .col {
-    height: 150px;
-  }
   .button {
     font-size: 16px;
   }
