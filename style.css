@@ -289,6 +289,21 @@ header {
   cursor: pointer;
 }
 
+/* Pulsante "torna indietro" dei problemi */
+input {
+  background-color: oklch(41.69% 0.01619 251.802 / 0.85);
+  color: oklch(87.521% 0.01489 264.543);
+  width: 150px;
+  height: 30px;
+  border-radius: 11px;
+  border-width: 0;
+}
+
+input:hover {
+  background-color: oklch(45.985% 0.01655 248.264 / 0.85);
+  cursor: pointer;
+}
+
 /* ------------------------------------ */
 
 #pagination {
