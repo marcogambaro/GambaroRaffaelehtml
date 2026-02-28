@@ -199,7 +199,7 @@ header {
   color: currentColor;
 }
 
-/* inserimento dati */
+/* inserimento dati login */
 
 .text-area {
   display: flex;
@@ -230,6 +230,53 @@ header {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+}
+
+/* CalcoBadge */
+
+.calcopath {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.calcopath__line {
+  position: absolute;
+  margin: 65px;
+  width: 80%;
+  padding: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calcopath__circles {
+  position: absolute;
+  width: 80%;
+  padding: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 50px;
+  z-index: 9999;
+}
+
+.calcocircle {
+  background-color: rgb(190, 255, 239);
+  color: oklch(0.211484 0.01165 254.088 / 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  min-width: 150px;
+  border-radius: 100%;
+  font-size: 40px;
+}
+
+.calcopath__circles :hover {
+  background-color: #bbb;
+  color: oklch(27.025% 0.05997 254.661 / 0.85);
 }
 
 
