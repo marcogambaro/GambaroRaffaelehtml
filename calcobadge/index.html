@@ -25,19 +25,81 @@
         </h1>
 
         <div class="calcopath">
-            <div class="calcopath">
-                <!-- SVG per la linea -->
-                <svg class="calcopath__line" width="100%" height="100%" style="position:absolute; top:0; left:0; pointer-events:none;"></svg>
+            <div class="calcopath__circles">
+                <div class="calcocircle sans" data-target="ALG">ALG</div>
+                <div class="calcocircle sans" data-target="G">G</div>
+                <div class="calcocircle sans" data-target="TDN">TDN</div>
+                <div class="calcocircle sans" data-target="C-P">C-P</div>
+                <div class="calcocircle sans" data-target="AN">AN</div>
+            </div>
 
-                <!-- Cerchi -->
-                <div class="calcopath__circles">
-                    <div class="calcocircle sans">A</div>
-                    <div class="calcocircle sans">G</div>
-                    <div class="calcocircle sans">TDN</div>
-                    <div class="calcocircle sans">C-P</div>
+            <div class="calcosection" id="ALG">
+                <h1 class="center-text sans" style="margin: 50px;">
+                    Algebra
+                </h1>
+                <div class="calcolist">
+                    <a href = "../problemi/conteggio" class ="button">conteggio</a>
+                    <a href = "../problemi/alice_bob" class = "button">alice_bob</a>
                 </div>
-            </div> 
-        </div>
-        </div>
+            </div>
+            <div class="calcosection" id="G">
+                <h1 class="center-text sans" style="margin: 50px;">
+                    Geometria
+                </h1>
+                <div class="calcolist">
+                    <a href = "../problemi/cerchibruc" class ="button">cerchibruc</a>
+                    <a href = "../problemi/alice_bob" class = "button">alice_bob</a>
+                </div>
+            </div>
+            <div class="calcosection" id="TDN">
+                <h1 class="center-text sans" style="margin: 50px;">
+                    Teoria dei numeri
+                </h1>
+                <div class="calcolist">
+                    <a href = "../problemi/conteggio" class ="button">conteggio</a>
+                    <a href = "../problemi/alice_bob" class = "button">alice_bob</a>
+                </div>
+            </div>
+            <div class="calcosection" id="C-P">
+                <h1 class="center-text sans" style="margin: 50px;">
+                    Combinatoria e probabilità
+                </h1>
+                <div class="calcolist">
+                    <a href = "../problemi/conteggio" class ="button">conteggio</a>
+                    <a href = "../problemi/alice_bob" class = "button">alice_bob</a>
+                </div>
+            </div>
+            <div class="calcosection" id="AN">
+                <h1 class="center-text sans" style="margin: 50px;">
+                    Analisi
+                </h1>
+                <div class="calcolist">
+                    <a href = "../problemi/conteggio" class ="button">conteggio</a>
+                    <a href = "../problemi/alice_bob" class = "button">alice_bob</a>
+                </div>
+            </div>
+        </div> 
     </body>
 </html>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const circles = document.querySelectorAll(".calcocircle");
+    const sections = document.querySelectorAll(".calcosection");
+
+    circles.forEach(circle => {
+        circle.addEventListener("click", () => {
+            const targetId = circle.dataset.target;
+
+            sections.forEach(sec => {
+                if (sec.id === targetId) {
+                    sec.style.display = "block";
+                } else {
+                    sec.style.display = "none";
+                }
+            });
+        });
+    });
+});
+</script>

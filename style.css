@@ -153,10 +153,7 @@ header {
   border-radius: 5px;
   font-size: 25px;
 }
-.button:hover {
-  background-color: rgb(111, 215, 223);
-  color: oklch(0.211484 0.01165 254.088 / 0.85);
-}
+
 
 /* Lista problemi */
 
@@ -235,30 +232,20 @@ header {
 /* CalcoBadge */
 
 .calcopath {
-  position: relative;
+  margin: 80px 0;
   width: 100%;
-  height: 200px;
-}
-
-.calcopath__line {
-  position: absolute;
-  margin: 65px;
-  width: 80%;
-  padding: 0 10%;
-  display: flex;
-  flex-wrap: wrap;
+  height: 100%;
 }
 
 .calcopath__circles {
-  position: absolute;
   width: 80%;
   padding: 0 10%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: start;
   gap: 50px;
-  z-index: 9999;
+  z-index: 100;
 }
 
 .calcocircle {
@@ -277,8 +264,32 @@ header {
 .calcopath__circles :hover {
   background-color: #bbb;
   color: oklch(27.025% 0.05997 254.661 / 0.85);
+  cursor: pointer;
 }
 
+.calcosection {
+  display: none;
+}
+
+.calcolist {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.calcolist :hover {
+  background-color: #bbb;
+}
+
+/* pulsanti */
+
+.button:hover {
+  background-color: rgb(111, 215, 223);
+  color: oklch(0.211484 0.01165 254.088 / 0.85);
+  cursor: pointer;
+}
+
+/* ------------------------------------ */
 
 #pagination {
   display: flex;
@@ -316,6 +327,17 @@ header {
 
   .button {
     font-size: 16px;
+  }
+
+  .calcopath__circles {
+    gap: 30px;
+  }
+
+  .calcocircle {
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+    font-size: 20px;
   }
 
   /* Mostra hamburger */
