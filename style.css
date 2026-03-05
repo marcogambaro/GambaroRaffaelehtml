@@ -96,7 +96,6 @@ header {
 /* Home */
 .title{
   font-size: 35px;
-  width: 45%;
   padding-top: 30px;
   padding-bottom: 30px;
   margin: 0 auto;
@@ -104,7 +103,7 @@ header {
 .subtitle {
   font-size: 18.5px;
   padding-bottom: 40px;
-  width: 40%;
+  width: 70%;
   margin: 0 auto;
 }
 .main {
@@ -220,7 +219,6 @@ header {
 
 .password-wrapper {
   position: relative;
-  margin: 0 auto;
 }
 .password-wrapper .toggle {
   position: absolute;
@@ -255,9 +253,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
-  width: 150px;
-  min-width: 150px;
+  height: 135px;
+  width: 135px;
+  min-width: 135px;
   border-radius: 100%;
   font-size: 40px;
 }
@@ -276,6 +274,9 @@ header {
   padding: 0 10%;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  gap: 20px;
 }
 
 .calcolist :hover {
@@ -292,7 +293,7 @@ header {
   padding: 20px 25px;
   background-color: rgb(45, 57, 57);
   border-radius: 8px;
-  height: 50px;
+  height: auto;
   width: 50%;
 }
 
@@ -353,6 +354,10 @@ input:hover {
   }
   .logo--login {
     display: block;
+  }
+
+  .text-area  {
+    width: 200px;
   }
 
   .button {
