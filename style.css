@@ -285,7 +285,7 @@ header {
 
 .calcodesc {
   text-align: left;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
