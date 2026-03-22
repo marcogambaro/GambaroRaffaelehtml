@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Le successioni di Jack</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman/index.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+                onload="renderMathInElement(document.body);"></script>
+        <script src="../../js/header.js"></script>
+    </head>
+    <body onload="loadHeader()">
+        <header>
+            
+        </header>
+
+        <h1 class="center-text sans">
+            Le successioni di Jack
+        </h1>
+
+        <div class="center-div">
+            <p>
+                Jack scrive sulla lavagna il numero \(x_0 = 2024^{2024}\).
+            </p>
+            <p>
+                Successivamente lo cancella e scrive al suo posto \(x_1 = |x_0 - \pi|\). Poi cancella
+                \(x_1\) e scrive al suo posto \(x_2 = |x_1 - \pi|\), e così via. In altri termini,
+                ad ogni mossa Jack cancella il numero \(x_n\), scritto precedentemente e lo sostituisce
+                con \(x_{n+1} = |x_n - \pi|\).
+            </p>
+            <p>
+                Dimostrare che esiste un valore di \(n\) tale che \(x_{n+2} = x_n\).
+            </p>
+
+            <form action="../index.html">
+                <input type="submit" value="Torna indietro" />
+            </form>
+        </div>
+    </body>
+</html>

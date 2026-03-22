@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorveglia la Fortezza</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman/index.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+                onload="renderMathInElement(document.body);"></script>
+        <script src="../../js/header.js"></script>
+    </head>
+    <body onload="loadHeader()">
+        <header>
+            
+        </header>
+
+        <h1 class="center-text sans">
+            Sorveglia la Fortezza
+        </h1>
+
+        <div class="center-div">
+            <p>
+                Una fortezza è un insieme finito di caselle in una griglia quadrata infinita, con la proprietà
+                che da ogni casella si può raggiungere ogni altra casella muovendosi sempre tra caselle con
+                un lato in comune. I muri della fortezza sono i segmenti unitari della griglia che separano
+                un quadrato della fortezza da un quadrato non appartenente alla fortezza. L'area \(A\) di
+                una fortezza è il numero di quadrati che la compongono. Il perimetro \(P\) di una fortezza è
+                la lunghezza totale dei suoi muri. Nella figura sottostante sono rappresentate tre possibili
+                fortezze, con i relativi valori di area e perimetro.
+            </p>
+            <img src="img.png" class="center-div" alt="Esempi di fortezze" width="80%" height="auto" style="padding: 0 10%">
+            <p>
+                Alcune caselle della fortezza possono contenere una guardia, che sorveglia tutte le caselle
+                che si trovano sopra, sotto, a destra o a sinistra della sua posizione, senza muri in mezzo
+                (ogni guardia sorveglia anche la casella in cui si trova). Ad esempio, una guardia posta
+                nella casella con il puntino della prima fortezza sorveglia sei caselle, compresa quella in cui
+                si trova.
+            </p>
+            <ol type="a">
+                <li>
+                    Determinare il più piccolo \(k\) per cui \(k\) guardie sono sufficienti per sorvegliare
+                    ogni possibile fortezza con perimetro \(P \le 2024\).
+                </li>
+                <li>
+                    Determinare il più piccolo \(k\) per cui \(k\) guardie sono sufficienti per sorvegliare
+                    ogni possibile fortezza con area \(A \le 2024\).
+                </li>
+            </ol>
+
+            <form action="../index.html">
+                <input type="submit" value="Torna indietro" />
+            </form>
+        </div>
+    </body>
+</html>

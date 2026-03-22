@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interi egiziani</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman/index.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+                onload="renderMathInElement(document.body);"></script>
+        <script src="../../js/header.js"></script>
+    </head>
+    <body onload="loadHeader()">
+        <header>
+            
+        </header>
+
+        <h1 class="center-text sans">
+            Interi egiziani
+        </h1>
+
+        <div class="center-div">
+            <p>
+                Un intero \(n\) si definisce <i>egiziano</i> se esiste una sequenza di interi positivi strettamente
+                crescente \(0 < a_1 < a_2 < ... < a_k = n\) (quindi l'ultimo termina della sequenza è \(n\)) tale che
+                $$ \frac{1}{a_1} + \frac{1}{a_2} + ... + \frac{1}{a_k} = 1 $$
+            </p>
+
+            <ol type="a">
+                <li>Determinare se il numero \(n = 72\) è egiziano.</li>
+                <li>Determinare se il numero \(n = 71\) è egiziano.</li>
+                <li>Determinare se il numero \(n = 72^{71}\) è egiziano.</li>
+            </ol>
+
+            <form action="../index.html">
+                <input type="submit" value="Torna indietro" />
+            </form>
+        </div>
+    </body>
+</html>

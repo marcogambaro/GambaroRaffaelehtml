@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Somma di n-uple crescenti</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman/index.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+                onload="renderMathInElement(document.body);"></script>
+        <script src="../../js/header.js"></script>
+    </head>
+    <body onload="loadHeader()">
+        <header>
+            
+        </header>
+
+        <h1 class="center-text sans">
+            Somma di n-uple crescenti
+        </h1>
+
+        <div class="center-div">
+            <p>
+                Per ogni intero positivo \(n\), determinare il più piccolo numero reale \(M_n\) tale che
+                $$ \frac{1}{a_1} + \frac{a_1}{a_2} + \frac{a_2}{a_3} + ... + \frac{a_{n-1}}{a_n} \le M_n $$
+                per ogni \(n\)-upla \((a_1, a_2, ..., a_n)\) di numeri <i>interi</i> tali che \(1 < a_1 < a_2 < ... < a_n\).
+            </p>
+
+            <form action="../index.html">
+                <input type="submit" value="Torna indietro" />
+            </form>
+        </div>
+    </body>
+</html>
