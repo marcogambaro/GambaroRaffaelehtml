@@ -42,12 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!listEl || !paginationEl) return;
 
   function difficultyColor(d) {
-    if (d <= 1.0) return "#29fa80";
-    else if (d <= 2.0) return "#19c340";
-    else if (d <= 3.0) return "#f7f313";
-    else if (d <= 4.0) return "#f39c12";
-    else if (d < 5.0) return "#e74c3c";
-    else return "#a52f21";
+    const t = clampDifficulty(d) / 5;
+    const hue = Math.round(150 * (1 - t));
+    return `hsl(${hue}, 85%, 50%)`;
   }
 
   function totalPages() {
